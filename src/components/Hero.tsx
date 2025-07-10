@@ -10,7 +10,7 @@ const Hero = () => {
           <div className="relative inline-block mb-8">
             <div className="absolute -inset-1 bg-gradient-to-r from-gray-600 to-gray-400 rounded-full blur opacity-25 animate-pulse"></div>
             <img 
-              src="/lovable-uploads/9ade0156-4397-4098-a4e0-9db90178c4d8.png"
+              src="/lovable-uploads/20210202_231843.jpg"
               alt="Kevin Raspo"
               className="relative w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-gray-700 shadow-2xl hover:scale-105 transition-transform duration-500 animate-[fade-in_1s_ease-out_0.2s_both]"
             />
