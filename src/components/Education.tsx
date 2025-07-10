@@ -4,18 +4,18 @@ import { GraduationCap, Calendar } from "lucide-react";
 const Education = () => {
   const education = [
     {
-      degree: "Bachelor's Degree in International Relations",
-      institution: "NATIONAL UNIVERSITY OF ROSARIO (UNR)",
-      location: "ROSARIO, ARGENTINA",
-      period: "2017 - 2021",
-      description: "Through extensive coursework in International Relations, I developed a deep understanding of global political and economic dynamics. Completing advanced courses in this field equipped me with analytical tools to assess international challenges, design strategic responses, and navigate complex geopolitical and institutional environments."
-    },
-    {
       degree: "Bachelor's Degree in Political Science - Specialization in Public Administration",
       institution: "NATIONAL UNIVERSITY OF ROSARIO (UNR)",
       location: "ROSARIO, ARGENTINA",
       period: "2017 - 2021",
       description: "This degree provided me with specialized tools to critically and strategically analyze how organizations operate. It equipped me with the skills to conduct well-founded research and propose improvements, always considering the various stakeholders involved and the contextual factors at play."
+    },
+    {
+      degree: "Bachelor's Degree in International Relations",
+      institution: "NATIONAL UNIVERSITY OF ROSARIO (UNR)",
+      location: "ROSARIO, ARGENTINA",
+      period: "2013 - 2016",
+      description: "Through extensive coursework in International Relations, I developed a deep understanding of global political and economic dynamics. Completing advanced courses in this field equipped me with analytical tools to assess international challenges, design strategic responses, and navigate complex geopolitical and institutional environments."
     }
   ];
 

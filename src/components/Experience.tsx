@@ -5,7 +5,7 @@ const Experience = () => {
   const experiences = [
     {
       title: "DIGITAL CONTENT EDITOR",
-      company: "Ray Platform",
+      company: "Rev Platform",
       location: "REMOTE",
       period: "Nov 2023 - May 2025",
       responsibilities: [

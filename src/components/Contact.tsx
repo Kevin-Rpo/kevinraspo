@@ -37,21 +37,20 @@ I am eager to keep growing, learning, and contributing to a team that values cur
             </div>
           </a>
 
-          <a 
-            href="tel:+393481900863"
-            className="group bg-black/30 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 hover:border-gray-600 transition-all duration-500 hover:shadow-xl hover:shadow-gray-900/20"
-          >
+          <div className="bg-black/30 backdrop-blur-sm border border-gray-800 rounded-2xl p-6">
             <div className="flex items-center gap-4">
-              <Phone className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors" />
+              <Phone className="w-8 h-8 text-gray-400" />
               <div>
                 <p className="text-gray-400 text-sm">Phone</p>
-                <p className="text-white font-medium group-hover:text-gray-300 transition-colors">
-                  +39 348 190 0863
+                <p className="text-white font-medium">
+                  +34 630 27 40 66 (Spain)
+                </p>
+                <p className="text-white font-medium">
+                  +39 348 190 0863 (Italy)
                 </p>
               </div>
-              <ExternalLink className="w-5 h-5 text-gray-500 ml-auto group-hover:text-gray-300 transition-colors" />
             </div>
-          </a>
+          </div>
 
           <a 
             href="https://linkedin.com/in/kevinraspo/"
@@ -76,7 +75,7 @@ I am eager to keep growing, learning, and contributing to a team that values cur
               <MapPin className="w-8 h-8 text-gray-400" />
               <div>
                 <p className="text-gray-400 text-sm">Location</p>
-                <p className="text-white font-medium">Rosario, Argentina</p>
+                <p className="text-white font-medium">Valencia, España</p>
               </div>
             </div>
           </div>

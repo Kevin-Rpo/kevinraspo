@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="space-y-3 text-gray-400">
             <div className="flex items-center gap-3">
               <Phone className="w-5 h-5" />
-              <span>+39 348 190 0863</span>
+              <span>+34 630 27 40 66 / +39 348 190 0863</span>
             </div>
             <div className="flex items-center gap-3">
               <Mail className="w-5 h-5" />
@@ -32,7 +32,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-3">
               <MapPin className="w-5 h-5" />
-              <span>Rosario, Argentina</span>
+              <span>Valencia, España</span>
             </div>
           </div>
 
