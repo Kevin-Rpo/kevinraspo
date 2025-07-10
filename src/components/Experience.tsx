@@ -5,7 +5,7 @@ const Experience = () => {
   const experiences = [
     {
       title: "DIGITAL CONTENT EDITOR",
-      company: "Rev Platform",
+      company: "Rev",
       location: "REMOTE",
       period: "Nov 2023 - May 2025",
       responsibilities: [
@@ -16,7 +16,7 @@ const Experience = () => {
     },
     {
       title: "COMMUNICATION AND STRATEGY CONSULTANT",
-      company: "Sage Studio",
+      company: "Soga Studio",
       location: "VILLASANTA, ITALY",
       period: "Nov 2023 - Jul 2024",
       responsibilities: [
@@ -28,7 +28,7 @@ const Experience = () => {
     },
     {
       title: "MONITORING AND EVALUATION CONSULTANT FOR PUBLIC POLICIES",
-      company: "City Council of Rosario",
+      company: "City Council of Rafaela",
       location: "RAFAELA, ARGENTINA",
       period: "Jul 2021 - May 2022",
       responsibilities: [
@@ -39,7 +39,7 @@ const Experience = () => {
     },
     {
       title: "POLITICAL ANALYSIS CONSULTANT",
-      company: "Political Party",
+      company: '"CREO" Social Organization',
       location: "ROSARIO, ARGENTINA",
       period: "May 2018 - Feb 2020",
       responsibilities: [
