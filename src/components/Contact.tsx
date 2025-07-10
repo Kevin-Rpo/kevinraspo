@@ -75,7 +75,7 @@ I am eager to keep growing, learning, and contributing to a team that values cur
               <MapPin className="w-8 h-8 text-gray-400" />
               <div>
                 <p className="text-gray-400 text-sm">Location</p>
-                <p className="text-white font-medium">Valencia, España</p>
+                <p className="text-white font-medium">Valencia, Spain</p>
               </div>
             </div>
           </div>

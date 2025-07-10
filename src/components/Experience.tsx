@@ -7,7 +7,7 @@ const Experience = () => {
       title: "DIGITAL CONTENT EDITOR",
       company: "Rev",
       location: "REMOTE",
-      period: "Nov 2023 - May 2025",
+      period: "Jul 2022 - Mar 2025",
       responsibilities: [
         "Multilingual Content Adaptation: Translated content from English to Spanish, ensuring accuracy, clarity, and cultural resonance for diverse audiences.",
         "Tech Adaptability: Worked with AI-powered tools, quickly adapting to new software and optimizing workflow efficiency.",
@@ -30,7 +30,7 @@ const Experience = () => {
       title: "MONITORING AND EVALUATION CONSULTANT FOR PUBLIC POLICIES",
       company: "City Council of Rafaela",
       location: "RAFAELA, ARGENTINA",
-      period: "Jul 2021 - May 2022",
+      period: "Jul 2022 - Jul 2023",
       responsibilities: [
         "Impact Assessment & Project Monitoring: Evaluated municipal programs, identifying inefficiencies and proposing data-driven improvements.",
         "Cross-departmental collaboration: Analyzed processes, identified improvement opportunities, developed KPIs and performance metrics using data analytics tools.",
@@ -41,7 +41,7 @@ const Experience = () => {
       title: "POLITICAL ANALYSIS CONSULTANT",
       company: '"CREO" Social Organization',
       location: "ROSARIO, ARGENTINA",
-      period: "May 2018 - Feb 2020",
+      period: "May 2019 - Feb 2022",
       responsibilities: [
         "Strategic Research: Conducted in-depth research on public policies, political trends, and economic developments to inform decision-making.",
         "International Affairs Monitoring: Tracked global news and analyzed international events to provide relevant insights for the party's positioning.",

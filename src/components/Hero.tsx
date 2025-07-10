@@ -57,7 +57,7 @@ const Hero = () => {
           <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-4 hover:border-gray-600 transition-all duration-300 hover:scale-105">
             <div className="flex items-center gap-3 text-gray-400">
               <MapPin className="w-5 h-5" />
-              <span className="text-sm">Valencia, España</span>
+              <span className="text-sm">Valencia, Spain</span>
             </div>
           </div>
         </div>
