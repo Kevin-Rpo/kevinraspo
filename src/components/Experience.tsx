@@ -38,7 +38,7 @@ const Experience = () => {
       ]
     },
     {
-      title: "CONTENT TEAM COLLABORATOR",
+      title: "POLITICAL ANALYSIS CONSULTANT",
       company: "Political Party",
       location: "ROSARIO, ARGENTINA",
       period: "May 2018 - Feb 2020",
@@ -54,7 +54,7 @@ const Experience = () => {
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center animate-[fade-in_1s_ease-out]">
           Professional <span className="text-gray-400">Experience</span>
         </h2>
         
@@ -62,11 +62,15 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div 
               key={index}
-              className="group relative bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-all duration-500 hover:shadow-xl hover:shadow-gray-900/20"
+              className="group relative bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-all duration-500 hover:shadow-xl hover:shadow-gray-900/20 animate-[fade-in_1s_ease-out] hover:scale-[1.02]"
+              style={{
+                animationDelay: `${index * 0.2}s`,
+                animationFillMode: 'both'
+              }}
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-gray-300 transition-colors">
+                  <h3 className="text-2xl font-bold text-white group-hover:text-gray-300 transition-colors duration-300">
                     {exp.title}
                   </h3>
                   <p className="text-xl text-gray-300 font-medium">{exp.company}</p>
@@ -86,7 +90,7 @@ const Experience = () => {
               
               <ul className="space-y-3">
                 {exp.responsibilities.map((resp, respIndex) => (
-                  <li key={respIndex} className="flex gap-3 text-gray-300">
+                  <li key={respIndex} className="flex gap-3 text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
                     <span className="text-gray-500 mt-2">•</span>
                     <span className="leading-relaxed">{resp}</span>
                   </li>
