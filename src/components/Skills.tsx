@@ -1,16 +1,20 @@
 
+import { useLanguage } from "../contexts/LanguageContext";
+
 const Skills = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 px-6 bg-black">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center animate-fade-in font-merriweather">
-          Skills & <span className="text-gray-400">Tools</span>
+          {t('skillsTitle')} <span className="text-gray-400">{t('skillsSubtitle')}</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12">
           {/* Skills Section */}
           <div className="bg-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-all duration-500 hover:shadow-xl hover:shadow-gray-900/20 animate-fade-in-up">
-            <h3 className="text-3xl font-bold mb-8 text-white font-merriweather">SKILLS</h3>
+            <h3 className="text-3xl font-bold mb-8 text-white font-merriweather">{t('skillsSection')}</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-300 hover:text-gray-200 transition-colors duration-300">
                 <span className="text-gray-500 mt-2">•</span>
@@ -53,7 +57,7 @@ const Skills = () => {
 
           {/* Tools Section */}
           <div className="bg-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-all duration-500 hover:shadow-xl hover:shadow-gray-900/20 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            <h3 className="text-3xl font-bold mb-8 text-white font-merriweather">TOOLS</h3>
+            <h3 className="text-3xl font-bold mb-8 text-white font-merriweather">{t('toolsSection')}</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-300 hover:text-gray-200 transition-colors duration-300">
                 <span className="text-gray-500 mt-2">•</span>
@@ -79,29 +83,29 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Languages Section */}
+        {/* Languages Section - Reverted to original format */}
         <div className="mt-12 bg-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-all duration-500 hover:shadow-xl hover:shadow-gray-900/20 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-          <h3 className="text-3xl font-bold mb-8 text-white font-merriweather text-center">LANGUAGES</h3>
-          <div className="grid md:grid-cols-4 gap-6">
+          <h3 className="text-3xl font-bold mb-8 text-white font-merriweather text-center">{t('languagesSection')}</h3>
+          <div className="grid md:grid-cols-5 gap-8">
             <div className="text-center">
-              <div className="text-4xl mb-2">🇪🇸</div>
-              <div className="text-gray-300 font-medium font-inter">Spanish</div>
-              <div className="text-sm text-gray-500 bg-gray-800 px-2 py-1 rounded-full mt-2 font-inter">Native</div>
+              <div className="text-gray-300 font-bold font-merriweather text-lg mb-2">{t('spanish')}</div>
+              <div className="text-sm text-gray-500 bg-gray-800 px-3 py-2 rounded-full font-inter">{t('native')}</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-2">🇺🇸</div>
-              <div className="text-gray-300 font-medium font-inter">English</div>
-              <div className="text-sm text-gray-500 bg-gray-800 px-2 py-1 rounded-full mt-2 font-inter">Fluent</div>
+              <div className="text-gray-300 font-bold font-merriweather text-lg mb-2">{t('english')}</div>
+              <div className="text-sm text-gray-500 bg-gray-800 px-3 py-2 rounded-full font-inter">{t('c1')}</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-2">🇫🇷</div>
-              <div className="text-gray-300 font-medium font-inter">French</div>
-              <div className="text-sm text-gray-500 bg-gray-800 px-2 py-1 rounded-full mt-2 font-inter">Conversational</div>
+              <div className="text-gray-300 font-bold font-merriweather text-lg mb-2">{t('french')}</div>
+              <div className="text-sm text-gray-500 bg-gray-800 px-3 py-2 rounded-full font-inter">{t('b2')}</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-2">🇮🇹</div>
-              <div className="text-gray-300 font-medium font-inter">Italian</div>
-              <div className="text-sm text-gray-500 bg-gray-800 px-2 py-1 rounded-full mt-2 font-inter">Conversational</div>
+              <div className="text-gray-300 font-bold font-merriweather text-lg mb-2">{t('italian')}</div>
+              <div className="text-sm text-gray-500 bg-gray-800 px-3 py-2 rounded-full font-inter">{t('b1')}</div>
+            </div>
+            <div className="text-center">
+              <div className="text-gray-300 font-bold font-merriweather text-lg mb-2">{t('german')}</div>
+              <div className="text-sm text-gray-500 bg-gray-800 px-3 py-2 rounded-full font-inter">{t('a1')}</div>
             </div>
           </div>
         </div>

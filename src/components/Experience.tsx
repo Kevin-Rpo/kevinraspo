@@ -1,11 +1,14 @@
 import { Calendar, MapPin } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const Experience = () => {
+  const { t } = useLanguage();
+  
   const experiences = [
     {
       title: "DIGITAL CONTENT EDITOR",
       company: "Rev",
-      location: "REMOTE",
+      location: "REMOTE", 
       period: "Jul 2022 - Mar 2025",
       responsibilities: [
         "Multilingual Content Adaptation: Translated content from English to Spanish, ensuring accuracy, clarity, and cultural resonance for diverse audiences.",
@@ -53,15 +56,15 @@ const Experience = () => {
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Inspirational Quote */}
-        <div className="text-center mb-16 animate-fade-in">
-          <blockquote className="text-2xl md:text-3xl font-light text-gray-400 italic font-merriweather leading-relaxed">
-            "Institutional success begins with the courage to ask questions we may not yet have answers to."
-          </blockquote>
+        {/* Inspirational Quote - More subtle */}
+        <div className="text-center mb-8 animate-fade-in">
+          <p className="text-base md:text-lg font-light text-gray-500 italic font-inter leading-relaxed max-w-2xl mx-auto">
+            {t('quote')}
+          </p>
         </div>
 
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center animate-[fade-in_1s_ease-out] font-merriweather">
-          Professional <span className="text-gray-400">Experience</span>
+          {t('experienceTitle')} <span className="text-gray-400">{t('experienceSubtitle')}</span>
         </h2>
         
         <div className="space-y-12">

@@ -1,10 +1,28 @@
 
-import { MapPin, Mail, Phone, Linkedin } from "lucide-react";
+import { MapPin, Mail, Phone, Linkedin, Globe } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const Hero = () => {
+  const { language, setLanguage, t } = useLanguage();
+
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="max-w-6xl mx-auto">
+        {/* Language selector */}
+        <div className="absolute top-6 right-6 z-10">
+          <Select value={language} onValueChange={(value: 'en' | 'es') => setLanguage(value)}>
+            <SelectTrigger className="w-[140px] bg-gray-900/50 border-gray-800 text-gray-300">
+              <Globe className="w-4 h-4 mr-2" />
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent className="bg-gray-900 border-gray-800">
+              <SelectItem value="en" className="text-gray-300 hover:bg-gray-800">English</SelectItem>
+              <SelectItem value="es" className="text-gray-300 hover:bg-gray-800">Español</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+
         {/* Main content with photo integrated */}
         <div className="text-center mb-12 animate-fade-in">
           <div className="relative inline-block mb-8">
@@ -18,12 +36,12 @@ const Hero = () => {
           
           <div className="space-y-4 animate-[fade-in_1s_ease-out_0.4s_both]">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight font-merriweather">
-              KEVIN
+              {t('heroTitle')}
               <br />
-              <span className="text-gray-400">RASPO</span>
+              <span className="text-gray-400">{t('heroSubtitle')}</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 font-light animate-[fade-in_1s_ease-out_0.6s_both] font-inter">
-              Project & Research Specialist | Strategy & Operations
+              {t('heroRole')}
             </p>
           </div>
         </div>
@@ -65,9 +83,7 @@ const Hero = () => {
         {/* Bio section */}
         <div className="max-w-4xl mx-auto text-center animate-[fade-in_1s_ease-out_1s_both]">
           <p className="text-lg text-gray-300 leading-relaxed font-inter">
-            I am Kevin, a political scientist who loves making sense of complex systems and finding ways to improve them. 
-            Whether it is evaluating policies, exploring data, or helping organizations rethink their strategies, I am always 
-            looking for ways to make processes smoother and decisions smarter.
+            {t('heroBio')}
           </p>
         </div>
       </div>
