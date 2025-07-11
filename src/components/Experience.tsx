@@ -1,4 +1,3 @@
-
 import { Calendar, MapPin } from "lucide-react";
 
 const Experience = () => {
@@ -54,7 +53,14 @@ const Experience = () => {
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center animate-[fade-in_1s_ease-out]">
+        {/* Inspirational Quote */}
+        <div className="text-center mb-16 animate-fade-in">
+          <blockquote className="text-2xl md:text-3xl font-light text-gray-400 italic font-merriweather leading-relaxed">
+            "Institutional success begins with the courage to ask questions we may not yet have answers to."
+          </blockquote>
+        </div>
+
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center animate-[fade-in_1s_ease-out] font-merriweather">
           Professional <span className="text-gray-400">Experience</span>
         </h2>
         
@@ -70,20 +76,20 @@ const Experience = () => {
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-gray-300 transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-white group-hover:text-gray-300 transition-colors duration-300 font-merriweather">
                     {exp.title}
                   </h3>
-                  <p className="text-xl text-gray-300 font-medium">{exp.company}</p>
+                  <p className="text-xl text-gray-300 font-medium font-inter">{exp.company}</p>
                 </div>
                 
                 <div className="space-y-2 mt-4 md:mt-0 text-gray-400">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>{exp.period}</span>
+                    <span className="font-inter">{exp.period}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>{exp.location}</span>
+                    <span className="font-inter">{exp.location}</span>
                   </div>
                 </div>
               </div>
@@ -92,7 +98,7 @@ const Experience = () => {
                 {exp.responsibilities.map((resp, respIndex) => (
                   <li key={respIndex} className="flex gap-3 text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
                     <span className="text-gray-500 mt-2">•</span>
-                    <span className="leading-relaxed">{resp}</span>
+                    <span className="leading-relaxed font-inter">{resp}</span>
                   </li>
                 ))}
               </ul>
