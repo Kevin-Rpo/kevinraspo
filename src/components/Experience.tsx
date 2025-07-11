@@ -4,28 +4,54 @@ import { Calendar, MapPin, Briefcase } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Policy Analyst",
-      company: "City Council of Valencia",
-      period: "2022 - Present",
-      location: "Valencia, Spain",
-      description: "Strategic policy development and implementation oversight for municipal governance initiatives.",
-      highlights: ["Policy framework development", "Stakeholder coordination", "Impact assessment"]
+      title: "Digital Content Editor",
+      company: "Rev",
+      period: "Jul 2022 - Mar 2025",
+      location: "Remote",
+      description: "",
+      highlights: [
+        "Multilingual Content Adaptation: Translated content from English to Spanish, ensuring accuracy, clarity, and cultural resonance for diverse audiences.",
+        "Tech Adaptability: Worked with AI-powered tools, quickly adapting to new software and optimizing workflow efficiency.",
+        "Quality Assurance & Editing: Reviewed and refined subtitles for readability, synchronization, and adherence to platform guidelines."
+      ]
     },
     {
-      title: "Research Consultant",
-      company: "Independent",
-      period: "2021 - 2022",
-      location: "Remote",
-      description: "Provided research and analysis services for political organizations and think tanks.",
-      highlights: ["Political analysis", "Report writing", "Data interpretation"]
+      title: "Communication and Strategy Consultant",
+      company: "Soga Studio",
+      period: "Nov 2023 - Jul 2024",
+      location: "Villasanta, Italy",
+      description: "",
+      highlights: [
+        "Strategic Market Analysis: Assessed the local socio-cultural landscape to tailor communication and outreach strategies aligned with the expectations of a small, traditional Italian community.",
+        "Multicultural Communications: Developed adaptable messaging strategies to effectively engage potential clients, ensuring resonance with the target demographic.",
+        "Brand Positioning & Outreach: Advised on communication initiatives that strengthened brand identity and improved client engagement, focusing on clarity and cultural effectiveness.",
+        "Content-Driven Decision Making: Conducted an organizational assessment to identify strategic opportunities and refine business positioning efforts."
+      ]
     },
     {
-      title: "Political Content Creator",
-      company: "Various Media Outlets",
-      period: "2020 - 2021",
-      location: "Remote",
-      description: "Created content covering international affairs, political systems, and social policy analysis.",
-      highlights: ["Content strategy", "International affairs", "Social media management"]
+      title: "Monitoring and Evaluation Consultant for Public Policies",
+      company: "City Council of Rafaela",
+      period: "Jul 2022 - Jul 2023",
+      location: "Rafaela, Argentina",
+      description: "",
+      highlights: [
+        "Impact Assessment & Project Monitoring: Evaluated municipal programs, identifying inefficiencies and proposing data-driven improvements.",
+        "Cross-departmental collaboration: Analyzed processes, identified improvement opportunities, developed KPIs and performance metrics using data analytics tools.",
+        "Data-Driven Reporting: Created reports to support informed decision-making."
+      ]
+    },
+    {
+      title: "Political Analysis Consultant",
+      company: '"CREO" Social Organization',
+      period: "May 2019 - Feb 2022",
+      location: "Rosario, Argentina",
+      description: "",
+      highlights: [
+        "Strategic Research: Conducted in-depth research on public policies, political trends, and economic developments to inform decision-making.",
+        "International Affairs Monitoring: Tracked global news and analyzed international events to provide relevant insights for the party's positioning.",
+        "Policy Briefing & Reporting: Prepared detailed reports on legislative initiatives, municipal projects, and public affairs developments to support strategic communications.",
+        "Communication & Strategy Meetings: Participated in high-level discussions on communication strategies, press releases, and strategic messaging, ensuring consistency with the party's narrative."
+      ]
     }
   ];
 
@@ -59,19 +85,18 @@ const Experience = () => {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="md:col-span-2">
                   <h3 className="text-2xl font-bold text-white mb-2 font-merriweather">{exp.title}</h3>
-                  <div className="flex items-center gap-2 text-gray-300 mb-2">
+                  <div className="flex items-center gap-2 text-gray-300 mb-4">
                     <Briefcase className="w-4 h-4" />
                     <span className="font-medium">{exp.company}</span>
                   </div>
-                  <p className="text-gray-400 mb-4 leading-relaxed font-inter">{exp.description}</p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="space-y-3">
                     {exp.highlights.map((highlight, i) => (
-                      <span 
-                        key={i}
-                        className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-inter"
-                      >
-                        {highlight}
-                      </span>
+                      <div key={i} className="flex items-start gap-3">
+                        <span className="text-gray-400 mt-2">•</span>
+                        <p className="text-gray-300 leading-relaxed font-inter text-sm">
+                          {highlight}
+                        </p>
+                      </div>
                     ))}
                   </div>
                 </div>
